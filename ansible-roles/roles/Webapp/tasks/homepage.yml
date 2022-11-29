@@ -1,0 +1,5 @@
+---
+- name: Copy custom home page website
+  copy: 
+    src: /home/student/ANSIBLE/ansible-roles/roles/Webapp/files/index.html
+    dest: /var/www/html

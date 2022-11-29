@@ -1,0 +1,13 @@
+---
+- name: Updating and Installing Vim
+  hosts: allplaybooks
+  tasks:
+    - name: Updating package
+      apt:
+       name: vim
+       state: latest
+       update_cache: yes
+    - name: installing package
+      apt:
+       name: vim
+       state: latest

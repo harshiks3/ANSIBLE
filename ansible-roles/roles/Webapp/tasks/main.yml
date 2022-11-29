@@ -1,0 +1,6 @@
+---
+# tasks file for Webapp
+
+- import_tasks: installapache.yml
+- import_tasks: homepage.yml
+- import_tasks: servicestop.yml

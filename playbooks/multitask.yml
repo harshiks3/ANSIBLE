@@ -1,0 +1,29 @@
+---
+- name: play book for copying cal file to allplaybooks
+  hosts: allplaybooks
+  tasks:
+    - name: Copy file with owner and permissions
+      copy:
+        src: /home/student/ANSIBLE/adhoc/cal2025.txt
+        dest: /tmp
+        owner: student
+        group: root
+        mode: '0660'
+    - name: Copy file with content
+      copy:
+        dest: /tmp/file1.txt
+        content: "Sample content for file1"
+    - name: Copy file with multiline
+      copy:
+        dest: /tmp/file2.txt
+        content: | 
+          Sample content for line1
+                Sample content for line2
+          Sample content for line3
+    - name: Copy file with singleline
+      copy:
+        dest: /tmp/file3.txt
+        content: > 
+          Sample content for line1
+                Sample content for line2
+          Sample content for line3

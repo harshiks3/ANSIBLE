@@ -1,0 +1,5 @@
+---
+- name: Stop Apache2 Stopped
+  service:
+    name: apache2
+    state: stopped

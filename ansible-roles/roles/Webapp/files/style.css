@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    border: 0;
+}
+
+.head {
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(206, 16, 16, 0.932), rgb(43, 255, 0));
+}
